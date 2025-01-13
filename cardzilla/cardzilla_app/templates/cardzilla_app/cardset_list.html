@@ -1,0 +1,37 @@
+{%extends 'cardzilla_app/base.html' %}
+
+{%block content%}
+<h2>All cardsets:</h2>
+<ul>
+   {% for cardset in page_obj %}
+   <li>
+   <a href="">{{ cardset.title }}</a>
+
+   {% comment %} {% if cardset.owner == user %}
+   ( <a href="{% url 'cardzilla_app:update_post' cardset.id %}">
+      Edit</a> |
+   <a href="{% url 'cardzilla_app:delete_post' cardset.id %}">
+      Delete</a>)
+   {% endif %}
+   </li> {% endcomment %}
+   {% endfor %}
+</ul>
+
+{% comment %} <div class="pagination">
+   <span class="step-links">
+       {% if page_obj.has_previous %}
+           <a href="?page=1">&laquo; first</a>
+           <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+       {% endif %}
+
+       <span class="current">
+           Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+       </span>
+
+       {% if page_obj.has_next %}
+           <a href="?page={{ page_obj.next_page_number }}">next</a>
+           <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+       {% endif %}
+   </span>
+</div>{% endcomment %}
+{%endblock%} 
