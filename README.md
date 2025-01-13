@@ -1,11 +1,10 @@
 # cardzilla
 
-# made by Vitalya
+# made by Finik135
 
 Victor
-David
-Oleksandr
-#### Salko Mykyta Olegovych
+Finik
+#### finik
 
 
 ```commandline
