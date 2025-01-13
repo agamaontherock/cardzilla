@@ -1,3 +1,3 @@
 # cardzilla
 
-### Mykyta Salko Olegovych
+### Salko Mykyta Olegovych
