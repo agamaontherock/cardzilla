@@ -23,3 +23,5 @@ OlexanderBidz
     }
 ```
 >>>>>>> 1526cff6b91042d76892ad3888a40d23b05ee534
+
+Andrij
