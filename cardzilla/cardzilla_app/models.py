@@ -10,4 +10,4 @@ class CardSet(models.Model):
     viewers = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='cardsets_viewable')
     
     def __str__(self):
-        return self.name
+        return self.title
